@@ -1,6 +1,17 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let reverseWord = word.split("").reverse().join("");
+
+  if (word.toLowerCase() === reverseWord.toLowerCase()) {
+    return true;
+
+  }else {
+    return false;
+  }
+
 }
+let word = "madam";
+console.log(isPalindrome(word));
 
 /* 
   Add your pseudocode here
